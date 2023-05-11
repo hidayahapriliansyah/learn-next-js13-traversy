@@ -1,5 +1,10 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
+
+export const metadata = {
+  title: 'About Page Next Js 13',
+  description: 'Metadata about page',
+};
 
 const AboutPage = () => {
   return (
@@ -11,4 +16,4 @@ const AboutPage = () => {
   )
 }
 
-export default AboutPage
+export default AboutPage;
