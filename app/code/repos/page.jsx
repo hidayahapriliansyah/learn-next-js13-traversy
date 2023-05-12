@@ -6,7 +6,11 @@ export const metadata = {
 };
 
 const fetchRepos = async () => {
-  const response = await fetch('https://api.github.com/users/hidayahapriliansyah/repos');
+  const response = await fetch('https://api.github.com/users/hidayahapriliansyah/repos', {
+    next: {
+      revalidate: 60,
+    }
+  });
 
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
