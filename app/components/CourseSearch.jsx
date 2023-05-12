@@ -10,6 +10,9 @@ const CourseSearch = ({ getSearchResults }) => {
     const response = await fetch(`/api/courses/search?title=${query}`);
     const courses = await response.json();
 
+    // fungsi ini meng state value useState dari component parent
+    // sehingga state dicomponent parent berubah berdasarkan
+    // function props childnya
     getSearchResults(courses);
   };
 
