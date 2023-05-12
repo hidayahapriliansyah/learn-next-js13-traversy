@@ -1,16 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import Courses from './components/Courses';
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Welcome To Latihan</h1>
-      <ul>
-        <li>
-          <Link href={'/about'}>About</Link>
-        </li>
-      </ul>
-    </div>
+    <>
+      <h1>Welcome To Belajar Next JS 13</h1>
+      <Courses />
+    </>
   );
 };
 
